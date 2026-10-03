@@ -1,3 +1,6 @@
+### v6.2 - 10.3.2026
+* Fix install on newer Magisk (e.g. v31): NVBASE is no longer exported by util_functions, so service.d scripts (boot-completed, uninstall fallback) and the file list were written to the wrong path
+
 ### v6.1 - 4.24.2024
 * mmtex v3.7 update
 
