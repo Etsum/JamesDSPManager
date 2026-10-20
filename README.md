@@ -7,7 +7,7 @@ Fork of [Zackptg5/JamesDSPManager](https://github.com/Zackptg5/JamesDSPManager) 
 * **v6.3:** fixes silence with per-session (enhanced) processing. The 32-bit ARM effect library is built from [Etsum/libjamesdsp](https://github.com/Etsum/libjamesdsp).
 * **v6.2:** works on newer Magisk (tested on v31). Magisk no longer sets `NVBASE`, so v6.1 put its boot and uninstall scripts in a path that does not exist. The JamesDSP app was then not installed, and was not disabled or removed with the module.
 
-Install: download [`install.zip`](install.zip) and flash it in Magisk (**Modules → Install from storage**).
+Install: download the zip for the version you want from [Releases](https://github.com/Etsum/JamesDSPManager/releases) (latest: v6.3), then install it in Magisk (**Modules → Install from storage**) and restart. To roll back, install an older zip the same way. Each release lists the effect libraries in its zip, with their SHA-1.
 
 ### Profiles are incompatible between old and new JDSP!
 
