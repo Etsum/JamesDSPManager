@@ -1,6 +1,7 @@
 ### v6.3 - 10.20.2026
 * Fix: in enhanced (per-app) mode, all sound on an output could stop. Android mixes the sound of all apps into one buffer. JamesDSP must add each app's sound to that buffer, but it replaced the buffer with the sound of one app. A paused player still sends silence. Thus a paused player (for example HiBy Music, which keeps a paused track open all the time) could replace all other sound with silence
 * 32-bit ARM library only (`common/files/arm`), built from [Etsum/libjamesdsp](https://github.com/Etsum/libjamesdsp) commit b3facc2 with NDK r25c. The arm64 (`huawei`) and x86 libraries are not changed
+* Magisk update check (`updateJson`) now uses this fork, not Zackptg5
 
 ### v6.2 - 10.3.2026
 * Fix install on newer Magisk (e.g. v31): NVBASE is no longer exported by util_functions, so service.d scripts (boot-completed, uninstall fallback) and the file list were written to the wrong path
