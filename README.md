@@ -2,8 +2,9 @@
 This module enables JamesDSPManager. [More details in support thread](https://forum.xda-developers.com/android/apps-games/app-reformed-dsp-manager-t3607970).
 
 ## This fork
-Fork of [Zackptg5/JamesDSPManager](https://github.com/Zackptg5/JamesDSPManager) (inactive since 2024) with one fix:
+Fork of [Zackptg5/JamesDSPManager](https://github.com/Zackptg5/JamesDSPManager) (inactive since 2024) with these fixes:
 
+* **v6.3:** fixes silence with per-session (enhanced) processing. The 32-bit ARM effect library is built from [Etsum/libjamesdsp](https://github.com/Etsum/libjamesdsp).
 * **v6.2:** works on newer Magisk (tested on v31). Magisk no longer sets `NVBASE`, so v6.1 put its boot and uninstall scripts in a path that does not exist. The JamesDSP app was then not installed, and was not disabled or removed with the module.
 
 Install: download [`install.zip`](install.zip) and flash it in Magisk (**Modules → Install from storage**).

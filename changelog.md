@@ -1,3 +1,7 @@
+### v6.3 - 10.20.2026
+* Fix silence with per-session (enhanced) processing. The effect overwrote the shared mix buffer, but Android asks it to add to it (accumulate mode). Then a paused player (for example HiBy Music) made all other audio on that output silent
+* 32-bit ARM library only (`common/files/arm`), built from [Etsum/libjamesdsp](https://github.com/Etsum/libjamesdsp) commit b3facc2 with NDK r25c. The arm64 (`huawei`) and x86 libraries are not changed
+
 ### v6.2 - 10.3.2026
 * Fix install on newer Magisk (e.g. v31): NVBASE is no longer exported by util_functions, so service.d scripts (boot-completed, uninstall fallback) and the file list were written to the wrong path
 
